@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 유니티 멀티플레이어 스타터킷 multiplayer-unity (개발중)
+title: 유니티 멀티플레이어 스타터킷 (개발중)
 tags:
   - Unity
 ---
