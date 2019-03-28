@@ -21,8 +21,7 @@ tags:
 ### 네트워킹 서비스 ChickenIngot.Networking
 유니티 네트워킹 LLAPI 를 사용하여 만들었다. LLAPI는 2018.3 부터 obsolute 되어서  
 2018.2.21 버전까지만 사용 가능하다.  
-리플렉션으로 RPC를 구현했기 때문에 RMP(Reflextion Message Protocol)라는 이름도 붙여줬다.  
-나중엔 리플렉션으로 멤버필드에도 접근할 수 있는 기능을 만들 생각이다.  
+리플렉션으로 RPC를 구현했기 때문에 멋있게 **RMP(Reflextion Message Protocol)**라는 이름도 붙여줬다. 나중엔 리플렉션으로 멤버필드에도 접근할 수 있는 기능도 만들 생각이다.  
 
 ### 스팀 연동
 [Facepunch.Steamworks](https://github.com/Facepunch/Facepunch.Steamworks)를 사용했다.  
