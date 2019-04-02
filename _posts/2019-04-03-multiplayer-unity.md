@@ -7,9 +7,11 @@ tags:
 
 ## [multiplayer-unity](https://github.com/chickeningot/multiplayer=unity)
 
-게임을 만들고 싶지만 구체적인 아이디어는 없어서 언젠가는 쓰겠지 하는 생각으로 만들게 된 프로젝트이다.  
+게임을 만들고 싶지만 구체적인 아이디어는 없어서  
+언젠가는 쓰겠지 하는 생각으로 만들게 된 프로젝트이다.  
 유니티 에셋스토어에 무료 에셋으로 올리고 싶은 마음이 있지만  
-스팀 기능을 만들면서 사용한 Facepunch.Steamwork를 재배포해도 될지 확신이 없어서 망설이고 있다.  
+스팀 기능을 만들면서 사용한 Facepunch.Steamwork를 재배포해도 될지   
+확신이 없어서 망설이고 있다.  
 
 MIT 라이센스이고 'Do whatever you want'라고 쿨하게 써놓기도 했지만  
 직접 물어보고 답변을 얻기 전까진 역시 찝찝하다. 
@@ -25,7 +27,9 @@ MIT 라이센스이고 'Do whatever you want'라고 쿨하게 써놓기도 했�
 
 ### 네트워킹 서비스 ChickenIngot.Networking
 ![](/images/2019-04-03-multiplayer-unity/networking.PNG)
+
 서버 열기, 서버 접속, RPC를 이용한 통신을 지원한다.  
+
 #### 예제 코드
 ```csharp
 public void SendChat(string msg)
@@ -55,12 +59,19 @@ private void clRPC_Chat(string msg)
 ### 스팀 연동 ChickenIngot.Steam
 ![](/images/2019-04-03-multiplayer-unity/steam1.PNG)
 ![](/images/2019-04-03-multiplayer-unity/steam2.PNG)
+
 모든 스팀 기능들은 Facepunch.Steamwork를 통해서 사용할 수 있다.  
-이 템플릿은 스팀 클라이언트와 서버를 자동으로 관리해 준다.
+이 템플릿은 스팀 클라이언트와 서버를 자동으로 관리해 준다.  
 위의 네트워킹 서비스를 이용해 서버를 열거나 닫을 경우 스팀서버도 함께 열고 닫힌다.
 
 ### 개발자 콘솔
 ![](/images/2019-04-03-multiplayer-unity/console.PNG)
+
+static 메소드에 어트리뷰트를 붙여놓으면 자동으로 명령어가 등록된다.  
+명령어의 이름을 정하는 방법은 두 가지가 있다.
+1. 어트리뷰트에 직접 전달
+2. 메소드의 이름을 'CommandPrint' 라고 지으면 'print'라는 명령어가 등록됨
+
 #### 예제 코드
 ```csharp
 [ConsoleCommand(Help = "Output message")]
