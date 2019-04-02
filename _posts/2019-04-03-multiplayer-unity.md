@@ -7,20 +7,15 @@ tags:
 
 ## [multiplayer-unity](https://github.com/chickeningot/multiplayer=unity)
 
-게임을 만들고 싶지만 구체적인 아이디어는 없어서  
-언젠가는 쓰겠지 하는 생각으로 만들게 된 프로젝트이다.  
-유니티 에셋스토어에 무료 에셋으로 올리고 싶은 마음이 있지만  
-스팀 기능을 만들면서 사용한 Facepunch.Steamwork를 재배포해도 될지   
-확신이 없어서 망설이고 있다.  
-
-MIT 라이센스이고 'Do whatever you want'라고 쿨하게 써놓기도 했지만  
-직접 물어보고 답변을 얻기 전까진 역시 찝찝하다. 
-
-### 기능
+요즘 만들고 있는 유니티 멀티플레이어 템플릿 프로젝트이다.  
+네트워킹 라이브러리를 만드는 김에 시작하게 된 프로젝트인데 기능은 다음과 같다.
 - 네트워킹 서비스
-- 스팀 연동
+- 스팀
 - 개발자 콘솔
 - 빌드 매니저
+
+유니티 에셋스토어에 무료 에셋으로 올리고 싶은 마음이 있지만  
+여기에 사용한 라이브러리를 재배포해도 될지 확신이 없어서 망설이고 있다.  
 
 ### 지원하는 유니티 버전
 ~2018.2.21 (2018.3 이전까지) 
@@ -29,6 +24,7 @@ MIT 라이센스이고 'Do whatever you want'라고 쿨하게 써놓기도 했�
 ![](/images/2019-04-03-multiplayer-unity/networking.PNG)
 
 서버 열기, 서버 접속, RPC를 이용한 통신을 지원한다.  
+리플렉션으로 RPC를 구현했기 때문에 멋있게 **RMP(Reflection Message Protocol)**라는 이름도 붙여줬다. 나중엔 멤버필드에도 접근할 수 있는 기능도 만들 생각이다. 
 
 #### 예제 코드
 ```csharp
@@ -56,11 +52,14 @@ private void clRPC_Chat(string msg)
 }
 ```
 
-### 스팀 연동 ChickenIngot.Steam
+### 스팀 ChickenIngot.Steam
 ![](/images/2019-04-03-multiplayer-unity/steam1.PNG)
 ![](/images/2019-04-03-multiplayer-unity/steam2.PNG)
 
-모든 스팀 기능들은 Facepunch.Steamwork를 통해서 사용할 수 있다.  
+모든 스팀 기능들은 [Facepunch.Steamworks](https://github.com/Facepunch/Facepunch.Steamworks)를 통해서 사용할 수 있다.  
+유니티에서 스팀 연동하는 법을 구글링하면 가장 먼저 나오는 게 [Steamworks.Net](https://steamworks.github.io/)인데  
+Facepuch 것이 훨씬 좋다. 게리모드와 러스트 개발자인 Garry가 만들었다.  
+
 이 템플릿은 스팀 클라이언트와 서버를 자동으로 관리해 준다.  
 위의 네트워킹 서비스를 이용해 서버를 열거나 닫을 경우 스팀서버도 함께 열고 닫힌다.
 
