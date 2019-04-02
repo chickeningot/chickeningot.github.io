@@ -20,13 +20,13 @@ tags:
 ### 지원하는 유니티 버전
 ~2018.2.21 (2018.3 이전까지) 
 
-### 네트워킹 서비스 ChickenIngot.Networking
+## 네트워킹 서비스 ChickenIngot.Networking
 ![](/images/2019-04-03-multiplayer-unity/networking.PNG)
 
 서버 열기, 서버 접속, RPC를 이용한 통신을 지원한다.  
 리플렉션으로 RPC를 구현했기 때문에 멋있게 **RMP(Reflection Message Protocol)**라는 이름도 붙여줬다. 나중엔 멤버필드에도 접근할 수 있는 기능도 만들 생각이다. 
 
-#### 예제 코드
+### 예제 코드
 ```csharp
 public void SendChat(string msg)
 {
@@ -52,7 +52,7 @@ private void clRPC_Chat(string msg)
 }
 ```
 
-### 스팀 ChickenIngot.Steam
+## 스팀 ChickenIngot.Steam
 ![](/images/2019-04-03-multiplayer-unity/steam1.PNG)
 ![](/images/2019-04-03-multiplayer-unity/steam2.PNG)
 
@@ -63,15 +63,15 @@ Facepuch 것이 훨씬 좋다. 게리모드와 러스트 개발자인 Garry가 �
 이 템플릿은 스팀 클라이언트와 서버를 자동으로 관리해 준다.  
 위의 네트워킹 서비스를 이용해 서버를 열거나 닫을 경우 스팀서버도 함께 열고 닫힌다.
 
-### 개발자 콘솔
+## 개발자 콘솔
 ![](/images/2019-04-03-multiplayer-unity/console.PNG)
 
 static 메소드에 어트리뷰트를 붙여놓으면 자동으로 명령어가 등록된다.  
 명령어의 이름을 정하는 방법은 두 가지가 있다.
 1. 어트리뷰트에 직접 전달
-2. 메소드의 이름을 'CommandPrint' 라고 지으면 'print'라는 명령어가 등록됨
+2. 예를들어, 메소드의 이름을 'CommandPrint' 라고 지으면 'print'라는 명령어가 등록됨
 
-#### 예제 코드
+### 예제 코드
 ```csharp
 [ConsoleCommand(Help = "Output message")]
 static void CommandPrint(CommandArg[] args)
