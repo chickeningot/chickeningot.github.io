@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 유니티 멀티플레이어 스타터킷 (개발중)
+title: 유니티 멀티플레이어 템플릿 개발중
 tags:
   - Unity
 ---
 
 ## [multiplayer-unity](https://github.com/chickeningot/multiplayer=unity)
 
-요즘 만들고 있는 유니티 멀티플레이어 스타터킷이다.  
+요즘 만들고 있는 유니티 멀티플레이어 템플릿 프로젝트이다.  
 네트워킹 라이브러리를 만드는 김에 시작하게 된 프로젝트인데 목표는 다음과 같다.  
 
 - 네트워킹 서비스 (완료)
