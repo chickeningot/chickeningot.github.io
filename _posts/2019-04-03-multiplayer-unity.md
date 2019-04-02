@@ -20,7 +20,7 @@ tags:
 ### 지원하는 유니티 버전
 ~2018.2.21 (2018.3 이전까지) 
 
-## 네트워킹 서비스 ChickenIngot.Networking
+## 네트워킹 서비스
 ![](/images/2019-04-03-multiplayer-unity/networking.PNG)
 
 서버 열기, 서버 접속, RPC를 이용한 통신을 지원한다.  
@@ -52,7 +52,7 @@ private void clRPC_Chat(string msg)
 }
 ```
 
-## 스팀 ChickenIngot.Steam
+## 스팀
 ![](/images/2019-04-03-multiplayer-unity/steam1.PNG)
 ![](/images/2019-04-03-multiplayer-unity/steam2.PNG)
 
