@@ -2,7 +2,8 @@
 layout: post
 title: 유니티 멀티플레이어 템플릿
 tags:
-  - Unity
+  - unity
+  - csharp
 ---
 
 ## [multiplayer-unity](https://github.com/chickeningot/multiplayer-unity)
