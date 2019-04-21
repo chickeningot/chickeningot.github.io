@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
 using System.IO;
 using System;
@@ -162,7 +161,6 @@ namespace ChickenIngot.Utility
 			}
 			catch (Exception e)
 			{
-				Debug.LogError(e);
 				task.error = FileError.ReadError;
 			}
 
@@ -181,7 +179,6 @@ namespace ChickenIngot.Utility
 			}
 			catch (Exception e)
 			{
-				Debug.LogError(e);
 				task.error = FileError.WriteError;
 			}
 
@@ -204,7 +201,6 @@ namespace ChickenIngot.Utility
 			}
 			catch (Exception e)
 			{
-				Debug.LogError(e);
 				task.error = FileError.RemoveError;
 			}
 
@@ -223,7 +219,6 @@ namespace ChickenIngot.Utility
 			}
 			catch (Exception e)
 			{
-				Debug.LogError(e);
 				task.error = FileError.RemoveError;
 			}
 
