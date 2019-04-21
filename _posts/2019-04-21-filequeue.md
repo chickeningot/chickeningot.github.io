@@ -5,7 +5,7 @@ tags:
   - csharp
 ---
 
-## [FileQueue.cs](file://assets/FileQueue.cs)
+## [FileQueue.cs](https://github.com/chickeningot/chickeningot.github.io/tree/master/assets/FileQueue.cs)
 
 같은 디렉토리를 하나의 스레드에서는 접근하려 하고, 다른 스레드에서는 제거하려고 한다면 문제가 발생할 것이다. 이러한 상황을 방지하고 싶을때, 즉 큐잉을 하고싶을 때 쓸 수 있는 클래스이다.  
 
