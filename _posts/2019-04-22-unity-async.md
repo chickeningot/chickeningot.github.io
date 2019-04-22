@@ -150,7 +150,7 @@ public class AsyncTest_Lambda : MonoBehaviour
 }
 ```
 
-코드가 훨씬 간단해졌다. 코루틴을 쓸 필요도 없고 무엇보다 더 멋있다. ㅎ
+코드가 훨씬 간단해졌다. 코루틴을 쓸 필요도 없고 무엇보다 이게 더 멋있다. ㅎ
 
 ## [unity-example-async](https://github.com/chickeningot/unity-example-async)
 이거는 위의 예제들을 다 모아놓은 프로젝트.
