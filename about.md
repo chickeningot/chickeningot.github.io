@@ -14,4 +14,4 @@ permalink: /about/
 
 ### Contact me
 
-[chickeningot@gmail.com](mailto:chickeningot@gmail.com)
+[llenok@naver.com](mailto:llenok@naver.com)
