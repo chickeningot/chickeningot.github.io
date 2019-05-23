@@ -6,7 +6,7 @@ tags:
   - csharp
 ---
 
-## [multiplayer-unity](https://github.com/llenok/multiplayer-unity)
+## [multiplayer-unity](https://github.com/salguanz/multiplayer-unity)
 
 요즘 만들고 있는 유니티 멀티플레이어 템플릿 프로젝트이다. 네트워킹 라이브러리를 만드는 김에 시작하게 된 프로젝트인데 기능은 다음과 같다.
 - 네트워킹 서비스

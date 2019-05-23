@@ -14,4 +14,4 @@ permalink: /about/
 
 ### Contact me
 
-[llenok@naver.com](mailto:llenok@naver.com)
+[salguanz@naver.com](mailto:salguanz@naver.com)
